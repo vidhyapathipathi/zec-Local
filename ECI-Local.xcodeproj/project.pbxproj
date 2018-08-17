@@ -12,6 +12,10 @@
 		1849A8EB212593A800046790 /* ForgotPasswordDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849A8EA212593A800046790 /* ForgotPasswordDataModel.swift */; };
 		1849A8EE2125A2A500046790 /* ResendLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849A8ED2125A2A500046790 /* ResendLinkView.swift */; };
 		1849A8F1212691E800046790 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849A8F0212691E800046790 /* ProfileView.swift */; };
+		1849A8F32126A6C900046790 /* EditInputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849A8F22126A6C900046790 /* EditInputs.swift */; };
+		1849A8F62126A6E800046790 /* EditInputs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1849A8F52126A6E800046790 /* EditInputs.xib */; };
+		1849A8F92126EE0C00046790 /* LogoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1849A8F82126EE0C00046790 /* LogoView.xib */; };
+		1849A8FB2126EE7100046790 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849A8FA2126EE7100046790 /* LogoView.swift */; };
 		1863554321253F0200E6B782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863554221253F0200E6B782 /* AppDelegate.swift */; };
 		1863554521253F0200E6B782 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863554421253F0200E6B782 /* LoginView.swift */; };
 		1863554821253F0200E6B782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1863554621253F0200E6B782 /* Main.storyboard */; };
@@ -30,6 +34,10 @@
 		1849A8EA212593A800046790 /* ForgotPasswordDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordDataModel.swift; sourceTree = "<group>"; };
 		1849A8ED2125A2A500046790 /* ResendLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResendLinkView.swift; sourceTree = "<group>"; };
 		1849A8F0212691E800046790 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1849A8F22126A6C900046790 /* EditInputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInputs.swift; sourceTree = "<group>"; };
+		1849A8F52126A6E800046790 /* EditInputs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditInputs.xib; sourceTree = "<group>"; };
+		1849A8F82126EE0C00046790 /* LogoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoView.xib; sourceTree = "<group>"; };
+		1849A8FA2126EE7100046790 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		1863553F21253F0200E6B782 /* ECI-Local.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ECI-Local.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1863554221253F0200E6B782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1863554421253F0200E6B782 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -77,9 +85,28 @@
 		1849A8EF212691BD00046790 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				1849A8F42126A6CD00046790 /* EditList */,
 				1849A8F0212691E800046790 /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		1849A8F42126A6CD00046790 /* EditList */ = {
+			isa = PBXGroup;
+			children = (
+				1849A8F22126A6C900046790 /* EditInputs.swift */,
+				1849A8F52126A6E800046790 /* EditInputs.xib */,
+			);
+			path = EditList;
+			sourceTree = "<group>";
+		};
+		1849A8F72126EDE300046790 /* Logo */ = {
+			isa = PBXGroup;
+			children = (
+				1849A8F82126EE0C00046790 /* LogoView.xib */,
+				1849A8FA2126EE7100046790 /* LogoView.swift */,
+			);
+			path = Logo;
 			sourceTree = "<group>";
 		};
 		1863553621253F0200E6B782 = {
@@ -118,6 +145,7 @@
 		186355542125477C00E6B782 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				1849A8F72126EDE300046790 /* Logo */,
 				1849A8EC2125A27C00046790 /* Resend Link */,
 				1849A8E72125937B00046790 /* Forgot Password */,
 				1863554421253F0200E6B782 /* LoginView.swift */,
@@ -204,9 +232,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1849A8F62126A6E800046790 /* EditInputs.xib in Resources */,
 				1863554D21253F1500E6B782 /* LaunchScreen.storyboard in Resources */,
 				1863554A21253F1500E6B782 /* Assets.xcassets in Resources */,
 				1863554821253F0200E6B782 /* Main.storyboard in Resources */,
+				1849A8F92126EE0C00046790 /* LogoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,10 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1863554521253F0200E6B782 /* LoginView.swift in Sources */,
+				1849A8F32126A6C900046790 /* EditInputs.swift in Sources */,
 				1863554321253F0200E6B782 /* AppDelegate.swift in Sources */,
 				1849A8F1212691E800046790 /* ProfileView.swift in Sources */,
 				18983D142125733400F04F23 /* ViewExtenctions.swift in Sources */,
 				1849A8E92125939700046790 /* ForgotPasswordViewModel.swift in Sources */,
+				1849A8FB2126EE7100046790 /* LogoView.swift in Sources */,
 				18983D0C21254E2C00F04F23 /* LoginViewModel.swift in Sources */,
 				1849A8EE2125A2A500046790 /* ResendLinkView.swift in Sources */,
 				1849A8E62125937700046790 /* ForgotPasswordView.swift in Sources */,

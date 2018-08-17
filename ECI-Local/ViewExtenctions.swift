@@ -21,7 +21,9 @@ enum CornerSide: Int {
 }
 
 extension UIView {
-    func setRoundCorners(_ side: CornerSide) {
+    func setRoundCorners(_ side: CornerSide, radius: CGFloat = 0) {
+        
+        let cornerRadius = radius > 0 ? radius:frame.size.height/2
         var corners:UIRectCorner!
         switch side {
         case .left:
@@ -36,7 +38,7 @@ extension UIView {
             corners = [.topRight, .bottomRight, .topLeft, .bottomLeft]
         }
         
-        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: frame.size.height/2, height: frame.size.height/2))
+        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
         let mask = CAShapeLayer()
         mask.path = path.cgPath
         self.layer.mask = mask

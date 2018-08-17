@@ -7,21 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1849A8E62125937700046790 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849A8E52125937700046790 /* ForgotPasswordView.swift */; };
+		1849A8E92125939700046790 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849A8E82125939700046790 /* ForgotPasswordViewModel.swift */; };
+		1849A8EB212593A800046790 /* ForgotPasswordDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849A8EA212593A800046790 /* ForgotPasswordDataModel.swift */; };
+		1849A8EE2125A2A500046790 /* ResendLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849A8ED2125A2A500046790 /* ResendLinkView.swift */; };
+		1849A8F1212691E800046790 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849A8F0212691E800046790 /* ProfileView.swift */; };
 		1863554321253F0200E6B782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863554221253F0200E6B782 /* AppDelegate.swift */; };
-		1863554521253F0200E6B782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863554421253F0200E6B782 /* ViewController.swift */; };
+		1863554521253F0200E6B782 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863554421253F0200E6B782 /* LoginView.swift */; };
 		1863554821253F0200E6B782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1863554621253F0200E6B782 /* Main.storyboard */; };
 		1863554A21253F1500E6B782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1863554921253F1500E6B782 /* Assets.xcassets */; };
 		1863554D21253F1500E6B782 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1863554B21253F1500E6B782 /* LaunchScreen.storyboard */; };
+		18983D0C21254E2C00F04F23 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18983D0B21254E2C00F04F23 /* LoginViewModel.swift */; };
+		18983D0E21254E5400F04F23 /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18983D0D21254E5400F04F23 /* LoginDataModel.swift */; };
+		18983D142125733400F04F23 /* ViewExtenctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18983D132125733400F04F23 /* ViewExtenctions.swift */; };
+		3B17CDF78CF21A8CF0420B75 /* Pods_ECI_Local.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E90FE40150155EE0030E13 /* Pods_ECI_Local.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00E90FE40150155EE0030E13 /* Pods_ECI_Local.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECI_Local.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1849A8E52125937700046790 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		1849A8E82125939700046790 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		1849A8EA212593A800046790 /* ForgotPasswordDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordDataModel.swift; sourceTree = "<group>"; };
+		1849A8ED2125A2A500046790 /* ResendLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResendLinkView.swift; sourceTree = "<group>"; };
+		1849A8F0212691E800046790 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1863553F21253F0200E6B782 /* ECI-Local.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ECI-Local.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1863554221253F0200E6B782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1863554421253F0200E6B782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1863554421253F0200E6B782 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1863554721253F0200E6B782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1863554921253F1500E6B782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1863554C21253F1500E6B782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1863554E21253F1600E6B782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18983D0B21254E2C00F04F23 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		18983D0D21254E5400F04F23 /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
+		18983D132125733400F04F23 /* ViewExtenctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtenctions.swift; sourceTree = "<group>"; };
+		191F3A5D2857029A01745973 /* Pods-ECI-Local.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECI-Local.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ECI-Local/Pods-ECI-Local.debug.xcconfig"; sourceTree = "<group>"; };
+		CF502A6646C77655B8EE8667 /* Pods-ECI-Local.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECI-Local.release.xcconfig"; path = "Pods/Target Support Files/Pods-ECI-Local/Pods-ECI-Local.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B17CDF78CF21A8CF0420B75 /* Pods_ECI_Local.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1849A8E72125937B00046790 /* Forgot Password */ = {
+			isa = PBXGroup;
+			children = (
+				1849A8E52125937700046790 /* ForgotPasswordView.swift */,
+				1849A8E82125939700046790 /* ForgotPasswordViewModel.swift */,
+				1849A8EA212593A800046790 /* ForgotPasswordDataModel.swift */,
+			);
+			path = "Forgot Password";
+			sourceTree = "<group>";
+		};
+		1849A8EC2125A27C00046790 /* Resend Link */ = {
+			isa = PBXGroup;
+			children = (
+				1849A8ED2125A2A500046790 /* ResendLinkView.swift */,
+			);
+			path = "Resend Link";
+			sourceTree = "<group>";
+		};
+		1849A8EF212691BD00046790 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1849A8F0212691E800046790 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		1863553621253F0200E6B782 = {
 			isa = PBXGroup;
 			children = (
 				1863554121253F0200E6B782 /* ECI-Local */,
 				1863554021253F0200E6B782 /* Products */,
+				AE1F53BD79072520598FF668 /* Pods */,
+				D364E76FD62CA4071612A1E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +103,45 @@
 		1863554121253F0200E6B782 /* ECI-Local */ = {
 			isa = PBXGroup;
 			children = (
+				1849A8EF212691BD00046790 /* Profile */,
+				186355542125477C00E6B782 /* Login */,
 				1863554221253F0200E6B782 /* AppDelegate.swift */,
-				1863554421253F0200E6B782 /* ViewController.swift */,
 				1863554621253F0200E6B782 /* Main.storyboard */,
 				1863554921253F1500E6B782 /* Assets.xcassets */,
 				1863554B21253F1500E6B782 /* LaunchScreen.storyboard */,
 				1863554E21253F1600E6B782 /* Info.plist */,
+				18983D132125733400F04F23 /* ViewExtenctions.swift */,
 			);
 			path = "ECI-Local";
+			sourceTree = "<group>";
+		};
+		186355542125477C00E6B782 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1849A8EC2125A27C00046790 /* Resend Link */,
+				1849A8E72125937B00046790 /* Forgot Password */,
+				1863554421253F0200E6B782 /* LoginView.swift */,
+				18983D0B21254E2C00F04F23 /* LoginViewModel.swift */,
+				18983D0D21254E5400F04F23 /* LoginDataModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AE1F53BD79072520598FF668 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				191F3A5D2857029A01745973 /* Pods-ECI-Local.debug.xcconfig */,
+				CF502A6646C77655B8EE8667 /* Pods-ECI-Local.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D364E76FD62CA4071612A1E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00E90FE40150155EE0030E13 /* Pods_ECI_Local.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1863555121253F1600E6B782 /* Build configuration list for PBXNativeTarget "ECI-Local" */;
 			buildPhases = (
+				DD29534A5163D42BDDB59F90 /* [CP] Check Pods Manifest.lock */,
 				1863553B21253F0200E6B782 /* Sources */,
 				1863553C21253F0200E6B782 /* Frameworks */,
 				1863553D21253F0200E6B782 /* Resources */,
+				2FCEBFDD11A4AD645C2CA47D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +212,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FCEBFDD11A4AD645C2CA47D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ECI-Local/Pods-ECI-Local-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JVFloatLabeledTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ECI-Local/Pods-ECI-Local-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD29534A5163D42BDDB59F90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ECI-Local-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1863553B21253F0200E6B782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1863554521253F0200E6B782 /* ViewController.swift in Sources */,
+				1863554521253F0200E6B782 /* LoginView.swift in Sources */,
 				1863554321253F0200E6B782 /* AppDelegate.swift in Sources */,
+				1849A8F1212691E800046790 /* ProfileView.swift in Sources */,
+				18983D142125733400F04F23 /* ViewExtenctions.swift in Sources */,
+				1849A8E92125939700046790 /* ForgotPasswordViewModel.swift in Sources */,
+				18983D0C21254E2C00F04F23 /* LoginViewModel.swift in Sources */,
+				1849A8EE2125A2A500046790 /* ResendLinkView.swift in Sources */,
+				1849A8E62125937700046790 /* ForgotPasswordView.swift in Sources */,
+				18983D0E21254E5400F04F23 /* LoginDataModel.swift in Sources */,
+				1849A8EB212593A800046790 /* ForgotPasswordDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +409,7 @@
 		};
 		1863555221253F1600E6B782 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 191F3A5D2857029A01745973 /* Pods-ECI-Local.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,12 +422,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aezion.ECI-Local";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1863555321253F1600E6B782 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF502A6646C77655B8EE8667 /* Pods-ECI-Local.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,7 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aezion.ECI-Local";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

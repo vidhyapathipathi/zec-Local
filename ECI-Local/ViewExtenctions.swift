@@ -172,4 +172,58 @@ extension String {
     
 }
 
- 
+
+
+//extension UIView {
+//    func setButtomCorners(_ side: CornerSide, radius: CGFloat = 0) {
+//
+//        let cornerRadius = radius > 0 ? radius:frame.size.height/2
+//        var corners:UIRectCorner!
+//        switch side {
+//        case .left:
+//            corners = [.topLeft, .bottomLeft]
+//        case .right:
+//            corners = [.topRight, .bottomRight]
+//        case .top:
+//            corners = [.topLeft, .topRight]
+//        case .bottom:
+//            corners = [.bottomLeft, .bottomRight]
+//        case .all:
+//            corners = [.topRight, .bottomRight, .topLeft, .bottomLeft]
+//        }
+//
+//        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
+//        let mask = CAShapeLayer()
+//        mask.path = path.cgPath
+//        self.layer.mask = mask
+//    }
+//}
+
+class TopBottomCorner: UIButton {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        roundCorners([.bottomLeft, .bottomRight], radius: 20)
+    }
+    
+    func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        self.layer.mask = mask
+    }
+}
+
+class popUpCancleButton: UIButton {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        roundCorners([.topRight, .bottomLeft], radius: 20)
+    }
+    
+    func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        self.layer.mask = mask
+    }
+}

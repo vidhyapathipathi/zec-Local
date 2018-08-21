@@ -12,6 +12,7 @@ class LoginView: UIViewController {
 
     @IBOutlet weak var loginView: UIView!
     
+    @IBOutlet weak var logoView: LogoView!
     @IBOutlet weak var passwordView: UIView!
     
     @IBOutlet weak var loginBtn: UIButton!
@@ -20,12 +21,14 @@ class LoginView: UIViewController {
         super.viewDidLoad()
         loginView.setRoundCorners(.right)
         passwordView.setRoundCorners(.right)
-//        loginBtn.setRoundCorners(.all)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        logoView.barAnimation()
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func forgotPasswordTapped(_ sender: Any) {

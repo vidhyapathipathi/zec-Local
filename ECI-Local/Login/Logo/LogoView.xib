@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogoView" customModule="ECI_Local" customModuleProvider="target">
             <connections>
+                <outlet property="bar1height" destination="hO7-df-jSl" id="5mh-zH-2yk"/>
+                <outlet property="bar2height" destination="9ll-1e-Rh5" id="M0m-tV-3KB"/>
+                <outlet property="bar3height" destination="NZN-gQ-ckn" id="pkI-M3-IDb"/>
                 <outlet property="viewContainer" destination="iN0-l3-epB" id="Z3i-kA-7tZ"/>
             </connections>
         </placeholder>
@@ -73,46 +76,44 @@
                     <rect key="frame" x="8" y="16" width="71" height="100"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SlH-o0-fXd">
-                            <rect key="frame" x="8" y="8" width="14" height="84"/>
+                            <rect key="frame" x="8" y="8" width="14" height="32"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="84" id="Vqh-bU-Vut"/>
                                 <constraint firstAttribute="width" constant="14" id="iSi-Jf-Z1m"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8y-Q3-9ns">
-                            <rect key="frame" x="28" y="8" width="14" height="84"/>
+                            <rect key="frame" x="28" y="8" width="14" height="27"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="14" id="230-Fr-dvB"/>
-                                <constraint firstAttribute="height" constant="84" id="ciG-up-Fzz"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3J2-e8-dsp">
-                            <rect key="frame" x="48" y="8" width="14" height="84"/>
+                            <rect key="frame" x="48" y="8" width="14" height="17"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="3J2-e8-dsp" firstAttribute="top" secondItem="15p-OX-LwG" secondAttribute="top" constant="8" id="8M3-E7-KlL"/>
-                        <constraint firstAttribute="bottom" secondItem="s8y-Q3-9ns" secondAttribute="bottom" constant="8" id="9ll-1e-Rh5"/>
+                        <constraint firstAttribute="bottom" secondItem="s8y-Q3-9ns" secondAttribute="bottom" constant="65" id="9ll-1e-Rh5"/>
                         <constraint firstItem="s8y-Q3-9ns" firstAttribute="leading" secondItem="SlH-o0-fXd" secondAttribute="trailing" constant="6" id="9qx-Sq-KY5"/>
                         <constraint firstItem="s8y-Q3-9ns" firstAttribute="leading" secondItem="SlH-o0-fXd" secondAttribute="trailing" constant="6" id="Ch6-MZ-85k"/>
                         <constraint firstAttribute="width" constant="71" id="DM9-rj-nik"/>
                         <constraint firstItem="3J2-e8-dsp" firstAttribute="leading" secondItem="s8y-Q3-9ns" secondAttribute="trailing" constant="6" id="Hsg-1d-s0F"/>
                         <constraint firstItem="3J2-e8-dsp" firstAttribute="leading" secondItem="s8y-Q3-9ns" secondAttribute="trailing" constant="6" id="Mme-4P-uwN"/>
-                        <constraint firstAttribute="bottom" secondItem="3J2-e8-dsp" secondAttribute="bottom" constant="8" id="NZN-gQ-ckn"/>
+                        <constraint firstAttribute="bottom" secondItem="3J2-e8-dsp" secondAttribute="bottom" constant="75" id="NZN-gQ-ckn"/>
                         <constraint firstAttribute="trailing" secondItem="3J2-e8-dsp" secondAttribute="trailing" constant="9" id="S4H-De-7lF"/>
                         <constraint firstAttribute="height" constant="100" id="TUK-J4-qHF"/>
-                        <constraint firstAttribute="bottom" secondItem="SlH-o0-fXd" secondAttribute="bottom" constant="8" id="hO7-df-jSl"/>
+                        <constraint firstAttribute="bottom" secondItem="SlH-o0-fXd" secondAttribute="bottom" constant="60" id="hO7-df-jSl"/>
                         <constraint firstItem="s8y-Q3-9ns" firstAttribute="top" secondItem="15p-OX-LwG" secondAttribute="top" constant="8" id="kUJ-qg-aCy"/>
                         <constraint firstItem="SlH-o0-fXd" firstAttribute="leading" secondItem="15p-OX-LwG" secondAttribute="leading" constant="8" id="l1k-jS-gwj"/>
                         <constraint firstItem="SlH-o0-fXd" firstAttribute="top" secondItem="15p-OX-LwG" secondAttribute="top" constant="8" id="o5N-OW-TIu"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="15p-OX-LwG" secondAttribute="bottom" constant="16" id="BSa-2u-FmH"/>
                 <constraint firstItem="15p-OX-LwG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="DWb-c2-Ud5"/>

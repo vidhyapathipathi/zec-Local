@@ -9,7 +9,9 @@
 import UIKit
 
 protocol EditInputDelegates {
-    func didChangeEditView(editHiddenView: Bool, editinputViews: Bool)
+    func didChangeEditView(editHiddenView: Bool, editinputViews: Bool, changePassword: Bool, editbtn: Bool)
+    
+    func changePassDelegate()
 }
 
 class EditInputs: UIView {
@@ -57,11 +59,16 @@ class EditInputs: UIView {
 
     @IBAction func saveTapped(_ sender: Any) {
         print("save Tapped")
-        if let d = editIPDelegate {
-            d.didChangeEditView(editHiddenView: false, editinputViews: true)
+        if let edit = editIPDelegate {
+            edit.didChangeEditView(editHiddenView: false, editinputViews: true, changePassword: true, editbtn: false)
         }
 
     }
+    
     @IBAction func changePasswordTapped(_ sender: Any) {
+        
+        if let edit = editIPDelegate {
+            edit.changePassDelegate()
+        }
     }
 }

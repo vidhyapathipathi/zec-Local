@@ -15,12 +15,16 @@ class ProfileView: UIViewController {
     @IBOutlet weak var editbtn: UIButton!
     @IBOutlet weak var editHiddenView: UIView!
     
+//    @IBOutlet weak var changePassword: UIView!
+    
+    @IBOutlet weak var changePassword: ChangePassword!
     @IBOutlet weak var editinputViews: EditInputs!
     override func viewDidLoad() {
         super.viewDidLoad()
         editinputViews.isHidden = true
         editHiddenView.isHidden = false
         editinputViews.editIPDelegate = self
+        changePassword.editIPDelegate = self
     }
 
     @IBAction func cameraTapped(_ sender: Any) {
@@ -32,7 +36,15 @@ class ProfileView: UIViewController {
         editbtn.isHidden = true
         editHiddenView.isHidden = true
         editinputViews.isHidden = false
+        changePassword.isHidden = true
     }
+    
+    @IBAction func changePassword(_ sender: Any) {
+        editHiddenView.isHidden = true
+        editinputViews.isHidden = true
+        changePassword.isHidden = false
+    }
+    
     
 }
 
@@ -74,11 +86,19 @@ extension ProfileView: UIImagePickerControllerDelegate, UINavigationControllerDe
 }
 
 extension ProfileView: EditInputDelegates {
+    func changePassDelegate() {
+        editHiddenView.isHidden = true
+        editinputViews.isHidden = true
+        changePassword.isHidden = false
+    }
     
-    func didChangeEditView(editHiddenView: Bool, editinputViews: Bool) {
+    
+     func didChangeEditView(editHiddenView: Bool, editinputViews: Bool, changePassword: Bool, editbtn: Bool) {
+        print("working")
         self.editHiddenView.isHidden = editHiddenView
         self.editinputViews.isHidden = editinputViews
-        self.editbtn.isHidden = false
+        self.changePassword.isHidden = changePassword
+        self.editbtn.isHidden = editbtn
     }
     
 }
